@@ -6,7 +6,7 @@ computer_wins = 0
 selection = ["rock", "paper", "scissors"]
 
 while True:
-    user_input = input("Type Rock/Paper/Scissors or Q to quit").lower()
+    user_input = input("Type Rock/Paper/Scissors or Q to quit: ").lower()
     if user_input == "q":
         break
     
@@ -29,6 +29,8 @@ while True:
     elif user_input == "scissors" and computer_selection == "paper":
         print("You won!")
         user_wins += 1
+    elif user_input == computer_selection:
+        print("It's a tie!")
     else:
         print("You lost!")
         computer_wins += 1
