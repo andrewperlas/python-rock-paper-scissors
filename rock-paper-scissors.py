@@ -36,3 +36,4 @@ while True:
         computer_wins += 1
 
 print("Game Over")
+print(f"Final Score - User: {user_wins} / Computer: {computer_wins}")
